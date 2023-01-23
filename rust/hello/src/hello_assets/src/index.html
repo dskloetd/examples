@@ -11,7 +11,13 @@
   <body>
     <main>
       <img src="logo.png" alt="DFINITY logo" />
-      <form action="#">
+      <form id="set-greeting-form" action="#">
+        <label for="name">Change the greeting: &nbsp;</label>
+        <input id="greeting-input" alt="greeting" type="text" value="Hello" />
+        <button type="submit">set</button>
+      </form>
+
+      <form id="greet-form" action="#">
         <label for="name">Enter your name: &nbsp;</label>
         <input id="name" alt="Name" type="text" />
         <button type="submit">Click Me!</button>

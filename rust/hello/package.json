@@ -36,5 +36,8 @@
     "last 2 firefox version",
     "last 2 safari version",
     "last 2 edge version"
-  ]
+  ],
+  "dependencies": {
+    "copy-webpack-plugin": "^11.0.0"
+  }
 }

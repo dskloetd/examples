@@ -1,3 +1,13 @@
+type survey = record {
+  name : text;
+  questions : vec text;
+};
+
 service : {
+    "get_surveys" : () -> (vec text) query;
+    "get_questions": (text) -> (vec text) query;
+    "add_survey": (survey) -> ();
+
     "greet": (text) -> (text) query;
+    "set_greeting": (text) -> (text);
 }
